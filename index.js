@@ -19,6 +19,13 @@
   const buttonStopAudio = document.getElementById('icon-stop-music')
   const buttonPlayAudio = document.getElementById('icon-play-music')
   buttonStopAudio.addEventListener('click', muted)
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const elementBenDefi = document.getElementById("button-defi-benjamin");
+    elementBenDefi.addEventListener("click", (e) => {
+        window.location.href = "/defis.html"
+    })
+  })
   
 
   

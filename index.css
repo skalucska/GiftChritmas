@@ -88,7 +88,7 @@ body{
     z-index: 4;
   }
 
-  #button-login{
+  #button-defi-benjamin, #button-defi-didier,#button-defi-dimitri,#button-defi-laura,#button-defi-magali,#button-defi-manuela{
     margin-top: 6px;
     padding: 2px 12px;
     border: solid 2px black;
@@ -102,13 +102,13 @@ body{
   }
   
 
-  #button-login:hover{
+  #button-defi-benjamin:hover,#button-defi-didier:hover,#button-defi-dimitri:hover,#button-defi-laura:hover,#button-defi-magali:hover,#button-defi-manuela:hover{
     background-color: #be0b0b;
     transform: scale(1.1);
     box-shadow: 6px 5px 0px 0px rgba(39, 18, 1, 0.85);
   }
 
-  #button-login:active{
+  #button-defi-benjamin:active,#button-defi-didier:active,#button-defi-dimitri:active,#button-defi-laura:active,#button-defi-magali:active,#button-defi-manuela:active{
     background-color: #be0b0b;
     transform: scale(0.9);
     box-shadow: 4px 3px 0px 0px rgba(39, 18, 1, 0.85);
@@ -800,3 +800,76 @@ body{
       transform: translateX(120px);
     }
   }
+
+
+  /* Adaptation pour petits écrans */
+@media (max-width: 768px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+  .text-section {
+      font-size: 1.2rem; /* Plus petit texte */
+      width: 12rem;
+      min-height: 4rem;
+  }
+
+  .login-section {
+      padding: 12px;
+      font-size: 1rem;
+  }
+
+  #button-defi-benjamin, #button-defi-didier, #button-defi-dimitri, 
+  #button-defi-laura, #button-defi-magali, #button-defi-manuela {
+      padding: 8px;
+      font-size: 0.9rem;
+  }
+
+  .icon-music-wrapper {
+      width: 36px;
+      height: 36px;
+  }
+}
+
+/* Adaptation pour très petits écrans */
+@media (max-width: 480px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+}
+
+  body{
+    background-color: #9a0c0d;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Itim", cursive;
+}
+  .text-section {
+    top: 10%;
+      font-size: 2rem;
+      width: 13rem;
+      user-select: none;
+  }
+  .login-section {
+      top: 30%;
+      padding: 8px;
+      font-size: 2rem;
+      background-color: transparent;
+      text-align: center;
+      color: transparent;
+      box-shadow: none;
+      border: none;
+  }
+  
+
+  #button-defi-benjamin, #button-defi-didier, #button-defi-dimitri, 
+  #button-defi-laura, #button-defi-magali, #button-defi-manuela {
+      width: 100%;
+      padding: 6px 12px;
+      font-size: 3rem;
+  }
+}
