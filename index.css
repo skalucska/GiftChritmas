@@ -856,8 +856,9 @@ body{
     top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
+    gap: 2.4em;
   }
 
   .text-section {
@@ -866,6 +867,7 @@ body{
       font-size: 1.8em;
       width: 13rem;
       user-select: none;
+      margin-top: 2.8em;
   }
   .defis-section {
       position: inherit;
