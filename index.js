@@ -23,7 +23,7 @@
   document.addEventListener("DOMContentLoaded", () => {
     const elementBenDefi = document.getElementById("button-defi-benjamin");
     elementBenDefi.addEventListener("click", (e) => {
-        window.location.href = "/defis.html"
+        window.location.href = "https://skalucska.github.io/GiftChritmas/defis.html"
     })
   })
   
