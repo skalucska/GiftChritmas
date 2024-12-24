@@ -3,13 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="defis.css" rel="stylesheet">
     <title>Défis Noël</title>
 </head>
 <body>
-    <h1>Défis Sutom</h1>
-    <div class="grid" id="grid"></div>
-    <button id="button-defi-valider" onclick="checkGuess()">Valider</button>
+    <h1>Défis</h1>
+    <div id="defis1">
+        <p>Le père Noël part pour sa tournée avec 6 rennes.<br>
+            Chaque renne transporte 3 lutins sur son dos et 2 lucioles sur ses cornes.<br>
+            Chaque lutin porte 3 sacs qui contiennent chacun 10 cadeaux.<br><br>
+            Combien d’êtres vivants partent pour la tournée de cadeaux ?</p>
+         <input class="input-number" type="number" id="answer1" placeholder="Votre réponse ici">
+         <br>
+         <button id="button-defi-valider" onclick="checkAnswer1()">Valider</button>
+         <div class="result1" id="result1"></div>
+    </div>
+    <div id="defis2">
+        <p>
+            Mon premier se jette lorsque vous jouez aux petits chevaux.<br>
+            Mon deuxième circule dans vos veines.<br>
+            Vous faites mon troisième quand il fait froid.<br>
+            C’est pendant mon tout qu’à lieu Noël.<br><br>
+            Quelle est la solution ?
+          </p>
+          <input class="input-number" type="text" id="answer2" placeholder="Votre réponse ici" autocomplete="off">
+          <br>
+          <button id="button-defi-valider" onclick="checkAnswer2()">Valider</button>
+          <div class="result2" id="result2"></div>
+    </div>
+    <div id="defis3">
+        <p>
+            Dans la nuit du 24 au 25 décembre, le père Noël est capturé par des bandits et devient prisonnier.<br><br>
+            Ils lui donnent le choix de son supplice :<br><br>
+            1. Être privé de nourriture pendant un mois.<br>
+            2. Être immédiatement dévoré par un ours brun.<br>
+            3. Se faire lécher les pieds par les rennes pendant 12 heures.<br>
+            4. Être attaché à un sapin de Noël enflammé.<br><br>
+            Quel choix doit-il faire pour s’en sortir et continuer sa tournée de Noël ?
+          </p>
+          <input class="input-number" type="text" id="answer3" placeholder="Votre réponse ici" autocomplete="off">
+          <br>
+          <button id="button-defi-valider" onclick="checkAnswer3()">Valider</button>
+          <div class="result3" id="result3"></div>
+    </div>   
+    <div id="defis4">
+        <p>
+            Mon premier est une consonne.<br>
+            Mon second est une note de musique.<br>
+            Mon tout s’offre à Noël.<br><br>
+            Qui suis-je ?
+          </p>
+          <input class="input-number" type="text" id="answer4" placeholder="Votre réponse ici" autocomplete="off">
+          <br>
+          <button id="button-defi-valider" onclick="checkAnswer4()">Valider</button>
+          <div class="result4" id="result4"></div>
+    </div> 
+    <div id="defis5">
+        <p>
+            Monsieur et Madame Relande ont un fils.<br><br>
+            Comment s’appelle t-il ?
+          </p>
+          <input class="input-number" type="text" id="answer5" placeholder="Votre réponse ici" autocomplete="off">
+          <br>
+          <button id="button-defi-valider" onclick="checkAnswer5()">Valider</button>
+          <div class="result5" id="result5"></div>
+    </div>
+    <div id="defis6">
+        <p>
+            Mon premier est le contraire de froid.<br>
+            Mon deuxième se trouve en haut d’une chemise ou d’un manteau.<br>
+            Mon troisième vient en premier dans l’alphabet.<br>
+            Mon tout s’offre souvent à Noël.<br><br>
+            Quelle est la réponse ?
+          </p>
+          <input class="input-number" type="text" id="answer6" placeholder="Votre réponse ici" autocomplete="off">
+          <br>
+          <button id="button-defi-valider" onclick="checkAnswer6()">Valider</button>
+          <div class="result6" id="result6"></div>
+    </div>
+    <div id="defis7">
+        <p>
+            Mon premier se trouve entre sol et si.<br>
+            Mon deuxième recouvre notre corps.<br>
+            Les oiseaux construisent mon troisième.<br>
+            Le Père Noël habite en mon tout.<br><br>
+            Quelle est la réponse ?
+          </p>
+          <input class="input-number" type="text" id="answer7" placeholder="Votre réponse ici" autocomplete="off">
+          <br>
+          <button id="button-defi-valider" onclick="checkAnswer7()">Valider</button>
+          <div class="result7" id="result7"></div>
+    </div>
     <script src="defis.js"></script>
 </body>
 </html>
