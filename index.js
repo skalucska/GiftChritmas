@@ -1,4 +1,4 @@
- 
+ var value = 0
   function muted(e){
     elementAudio.pause();
     buttonStopAudio.style.display = 'none';
@@ -20,12 +20,29 @@
   const buttonPlayAudio = document.getElementById('icon-play-music')
   buttonStopAudio.addEventListener('click', muted)
 
+
   document.addEventListener("DOMContentLoaded", () => {
-    const elementBenDefi = document.getElementById("button-defi-benjamin");
-    elementBenDefi.addEventListener("click", (e) => {
-        window.location.href = "https://skalucska.github.io/GiftChritmas/defis.html"
+    const numberButton = document.getElementById("button-defi");
+    numberButton.addEventListener("click", (e) => {
+      const number = document.getElementById("number-input").value.trim();
+      value = number;
+      //window.location.href = "/defis.html?id="+value;
+      window.location.href = "https://skalucska.github.io/GiftChritmas/defis.html?id="+value;
+    });
+  
+    document.body.addEventListener("keydown", (KeyboardEvent) => {
+      if(KeyboardEvent.code === "Enter"){
+        const numberElement = document.getElementById("number-input");
+        const activeElement = document.activeElement;
+        if(activeElement === numberElement){
+          const number = document.getElementById("number-input").value.trim();
+          value = number;
+          //window.location.href = "/defis.html?id="+value;
+          window.location.href = "https://skalucska.github.io/GiftChritmas/defis.html?id="+value;
+        }
+      }
     })
-  })
+  });
   
 
   

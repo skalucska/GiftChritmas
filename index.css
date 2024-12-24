@@ -88,7 +88,7 @@ body{
     z-index: 4;
   }
 
-  #button-defi-benjamin, #button-defi-didier,#button-defi-dimitri,#button-defi-laura,#button-defi-leandro,#button-defi-magali,#button-defi-manuela{
+  #button-defi{
     margin-top: 6px;
     padding: 2px 12px;
     border: solid 2px black;
@@ -102,19 +102,19 @@ body{
   }
   
 
-  #button-defi-benjamin:hover,#button-defi-didier:hover,#button-defi-dimitri:hover,#button-defi-laura:hover,#button-defi-leandro:hover,#button-defi-magali:hover,#button-defi-manuela:hover{
+  #button-defi:hover{
     background-color: #be0b0b;
     transform: scale(1.1);
     box-shadow: 6px 5px 0px 0px rgba(39, 18, 1, 0.85);
   }
 
-  #button-defi-benjamin:active,#button-defi-didier:active,#button-defi-dimitri:active,#button-defi-laura:active,#button-defi-leandro:active,#button-defi-magali:active,#button-defi-manuela:active{
+  #button-defi:active{
     background-color: #be0b0b;
     transform: scale(0.9);
     box-shadow: 4px 3px 0px 0px rgba(39, 18, 1, 0.85);
   }
 
-  .input-login{
+  .input-number{
     border-radius: 25rem;
     padding: 4px 10px;
     font-family: inherit;
@@ -128,7 +128,7 @@ body{
     z-index: 4;
   }
 
-  .input-login:focus{
+  .input-number:focus{
     outline: solid black 3px;
   }
 
@@ -822,8 +822,7 @@ body{
       font-size: 1rem;
   }
 
-  #button-defi-benjamin, #button-defi-didier, #button-defi-dimitri, 
-  #button-defi-laura,#button-defi-leandro, #button-defi-magali, #button-defi-manuela {
+  #button-defi {
       padding: 8px;
       font-size: 0.9rem;
   }
@@ -882,8 +881,7 @@ body{
   }
   
 
-  #button-defi-benjamin, #button-defi-didier, #button-defi-dimitri, 
-  #button-defi-laura,#button-defi-leandro, #button-defi-magali, #button-defi-manuela {
+  #button-defi {
       width: 80%;
       padding: 4px 8px;
       font-size: 2rem;
